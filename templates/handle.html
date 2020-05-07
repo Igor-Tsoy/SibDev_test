@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1px">
+    <thead align="center">
+        <tr>
+            <td>
+                Покупатель
+            </td>
+            <td>
+                Потрачено за весь период
+            </td>
+            <td>
+                Камни
+            </td>
+        </tr>
+    </thead>
+{% for cust in result %}
+<tr align="center">
+    <td>
+        {{cust.username}}
+    </td>
+    <td>
+        {{cust.spent_money}}
+    </td>
+    <td>
+        {% for gem in cust.gems %} {{gem}} {% endfor %}
+    </td>
+</tr>
+{% endfor %}
+</table><br>
+ <a href="{% url 'app1:handle' fmt='json' %}">Получить данные в JSON</a><br><br>
+    <a href="{% url 'app1:handle' fmt='xml' %}">Получить данные в XML</a>
+</body>
+</html>
