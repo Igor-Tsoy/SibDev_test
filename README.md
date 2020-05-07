@@ -28,4 +28,4 @@ $ docker-compose up
 Получить результат:
 * handle/table/ - в виде html таблицы
 * handle/json/ - в JSON
-* handle/xml/ - в xml
+* handle/xml/ - в XML
