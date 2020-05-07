@@ -1,12 +1,15 @@
 from django.shortcuts import render, redirect, HttpResponse
 from django.views.generic import TemplateView
-import csv
-import xmltodict
-from .forms import UploadFileForm
-from .models import Deal
 from django.db.models import Sum
 from django.http import JsonResponse
 from django.http import Http404
+
+from .forms import UploadFileForm
+from .models import Deal
+
+import csv
+import xmltodict
+
 
 class BaseView(TemplateView):
     form = UploadFileForm
