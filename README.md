@@ -5,8 +5,7 @@
 Копируем данный репозиторий
 
 ~~~
-$ git clone https://github.com/Rimasko/juniorTest.git
-$ cd juniorTest
+$ git clone https://github.com/Igor-Tsoy/SibDev_test.git
 ~~~
 
 Запускаем сборку docker-compose
